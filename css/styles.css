@@ -548,6 +548,11 @@ max-width: 264px;
    margin-bottom: 16px;
    } 
    .input-email{
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
     width: 264px;
     height: 40px;
     background: transparent;
@@ -557,12 +562,12 @@ max-width: 264px;
    }
    .input-email::placeholder{
     padding-left:   16px;
-    color: rgba(255, 255, 255, 1);
+    color: #ffffff;
     font-size: 12px;
 
    }
 .input-btn{
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     color: #fff;
     text-align: center;
@@ -571,7 +576,12 @@ max-width: 264px;
     border-radius: 4px;
     background-color: #4D5AE5;
     margin: 0 auto;
-    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+
     
 }
 .btn-icon{
@@ -591,7 +601,7 @@ max-width: 264px;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) visibility cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility cubic-bezier(0.4, 0, 0.2, 1);
 } 
 .is-open{
     opacity: 1;
@@ -625,7 +635,8 @@ max-width: 264px;
     cursor: pointer;
     justify-content: center;
     align-items: center;
-
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .modal-close:hover,
@@ -647,6 +658,8 @@ max-width: 264px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
+    color: #2E2F42;
+    margin-bottom: 16px;
 }
 .label-container{
     margin-bottom: 8px;
@@ -658,6 +671,7 @@ max-width: 264px;
     letter-spacing: 0.04em;
     margin-bottom: 4px;
     color: #8e8f99;
+  display: block;
 }
 .input-container{
     position: relative;
@@ -667,6 +681,11 @@ max-width: 264px;
     height: 40px;
     border: 1px solid #2E2F42;
     border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.4); 
+    background-color: transparent;
+    padding-left: 38px; 
+    outline: transparent;
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .modal-input:focus{
     border-color: #4D5AE5;
@@ -679,6 +698,7 @@ max-width: 264px;
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .textarea-container{
     margin-bottom: 16px;
@@ -697,7 +717,7 @@ max-width: 264px;
     background-color: transparent;
     outline: transparent;
     resize: none;
-
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .textarea:hover,
 .textarea:focus{
@@ -717,7 +737,7 @@ max-width: 264px;
 .checkbox-input:checked + .label-checkbox{
     border: none;
     fill: #f4f4fd;
-  
+  background-color:  #404bbf;
     
 }
 .privacy-span{
@@ -727,8 +747,8 @@ border: 1px solid rgba(46, 47, 66, 0.4);
 border-radius: 2px;
 justify-content: center;
 fill: transparent;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1)
-fill 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 margin-right: 8px;
 display: inline-flex;
 align-items: center;
@@ -741,4 +761,17 @@ align-items: center;
     line-height: 1.17;
     letter-spacing: 0.04em;
     text-decoration: underline;
+}
+.send-btn{
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff ;
+    cursor: pointer ;
+    background-color: #4D5AE5 ;
+    border: none;
+    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
