@@ -691,7 +691,7 @@ justify-content: center;
     border-color: #4D5AE5;
 }
 .modal-input + .icon-input{
-    fill: #fff;
+  fill: #4D5AE5;
 }
 .icon-input{
     position: absolute;
@@ -734,7 +734,7 @@ justify-content: center;
     letter-spacing: 0.04em;
     color: #8e8f99;
 }
-.checkbox-input:checked + .privacy-span{
+.checkbox-input:checked +  .label-checkbox .privacy-span{
     border: none;
     fill: #f4f4fd;
   background-color:  #404bbf;
